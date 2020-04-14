@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>YDAYS</title>
+    
+    <link href="assets/style/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="sidebar__mobile">
+        <form action="action_page.php" method="post">
+            <div class="container">
+              <label for="uname"><b>Username</b></label>
+              <input type="text" placeholder="Enter Username" name="uname" required>
+          
+              <label for="psw"><b>Password</b></label>
+              <input type="password" placeholder="Enter Password" name="psw" required>
+          
+              <button type="submit">Login</button>
+            </div>
+          
+            <div class="container" style="background-color:#f1f1f1">
+              <button type="button" class="cancelbtn">S'inscrire</button>
+              <span class="psw">Forgot <a href="#">password?</a></span>
+            </div>
+          </form>
+    </div>
+    
+    <div class="overlay"></div>
+    <header class="header__main">
+        <div class="header__leftpart">
+            <div class="header__title">
+                <p>
+                    Labo DevWeb - Ynov YDays
+                </p>
+            </div>
+        </div>
+        <nav class="header__nav">
+            <ul class="nav__list">
+                <li class="nav__item"><a href="#about__section">ABOUT</a></li>
+                <li class="nav__item"><a href="#">CONTACT</a></li>    
+            </ul> 
+        </nav> 
+        <div class="burger__wraper">
+            <div class="burger__menu"></div>  
+
+        </div>
+    </header>
+    
+    <main>
+        <section class="home__hero">
+            
+            <div class="hero__content">
+                <h1>Labo Dev Web</h1>
+                <p>Ynov - YDays 2020</p>
+            </div>
+            
+        </section>
+        
+        
+        <section class="about__section" id="about__section">
+            <div class="left-part">
+                <p class="paragraph">Le labo Dev Web est un labo qui te permettra d'apprendre à développer des applications Web,
+                    ou bien de simplement renforcer tes compétences !</br>
+                 L'année se déroulera sous forme de mini-projets autonomes.</br>
+                Les séances de YDays seront une semaine sur deux, le mardi et le jeudi.
+                </p>
+            </div>
+            <div>
+                <img src="assets/images/cover2.png" alt="img">
+            </div>
+        </section>
+        <section class="contact__section" id="contact__section">
+            <form action="/ma-page-de-traitement" method="post">
+                <div>
+                    <label for="name">Nom :</label>
+                    <input type="text" id="name" name="user_name">
+                </div>
+                <div>
+                    <label for="mail">e-mail :</label>
+                    <input type="email" id="mail" name="user_mail">
+                </div>
+                <div>
+                    <label for="msg">Message :</label>
+                    <textarea id="msg" name="user_message"></textarea>
+                </div>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <h3>&copy; Copyright 2020 &middot; Yanis Djebbari &middot; All rights reserved.</h3>
+    </footer>
+</body>
+<script
+src="https://code.jquery.com/jquery-3.4.1.js"
+integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+crossorigin="anonymous"></script>
+<script src="assets/js/main.js"></script>
+</html>
